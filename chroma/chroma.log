@@ -1,0 +1,54 @@
+[33mWARNING[0m:  [14-03-2025 20:32:55] chroma_server_nofile is set to 65535, but this is less than current soft limit of 1048576. chroma_server_nofile will not be set.
+[32mINFO[0m:     [14-03-2025 20:32:55] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [14-03-2025 20:32:55] Starting component System
+[36mDEBUG[0m:    [14-03-2025 20:32:55] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [14-03-2025 20:32:55] Starting component SqliteDB
+[36mDEBUG[0m:    [14-03-2025 20:32:55] Starting component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [14-03-2025 20:32:55] Starting component Posthog
+[36mDEBUG[0m:    [14-03-2025 20:32:55] Starting component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [14-03-2025 20:32:55] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [14-03-2025 20:32:55] Starting component LocalExecutor
+[36mDEBUG[0m:    [14-03-2025 20:32:55] Starting component SegmentAPI
+[36mDEBUG[0m:    [14-03-2025 20:32:55] Starting component SimpleAsyncRateLimitEnforcer
+[32mINFO[0m:     [14-03-2025 20:32:55] Started server process [[36m95102[0m]
+[32mINFO[0m:     [14-03-2025 20:32:55] Waiting for application startup.
+[32mINFO[0m:     [14-03-2025 20:32:55] Application startup complete.
+[32mINFO[0m:     [14-03-2025 20:32:55] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [14-03-2025 20:35:57] 127.0.0.1:37466 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [14-03-2025 20:35:57] 127.0.0.1:37472 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [14-03-2025 20:35:57] 127.0.0.1:37472 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[32mINFO[0m:     [14-03-2025 20:36:04] 127.0.0.1:37480 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [14-03-2025 20:36:06] 127.0.0.1:37480 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [14-03-2025 20:36:13] 127.0.0.1:42212 - "GET /api/v2/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [14-03-2025 20:36:13] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [14-03-2025 20:36:14] 127.0.0.1:42212 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/a5a38f61-56a9-4b6f-bc62-2e4e4f734dc8/add HTTP/1.1" 201
+[36mDEBUG[0m:    [14-03-2025 20:40:03] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [14-03-2025 20:40:30] 127.0.0.1:44634 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/610830b8-a54b-4b80-b2bb-43d2403407c0/add HTTP/1.1" 201
+[32mINFO[0m:     [14-03-2025 21:08:19] 127.0.0.1:54718 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [14-03-2025 21:08:19] 127.0.0.1:54720 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [14-03-2025 21:08:19] 127.0.0.1:54720 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [14-03-2025 21:08:41] Collection blogs_data already exists, returning existing collection.
+[32mINFO[0m:     [14-03-2025 21:08:41] 127.0.0.1:55272 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [14-03-2025 21:08:41] 127.0.0.1:55272 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/a5a38f61-56a9-4b6f-bc62-2e4e4f734dc8/query HTTP/1.1" 200
+[32mINFO[0m:     [14-03-2025 21:11:12] 127.0.0.1:34498 - "GET /api/v2/auth/identity HTTP/1.1" 200
+[32mINFO[0m:     [14-03-2025 21:11:12] 127.0.0.1:34500 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [14-03-2025 21:11:12] 127.0.0.1:34500 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [14-03-2025 21:11:38] Collection blogs_data already exists, returning existing collection.
+[32mINFO[0m:     [14-03-2025 21:11:38] 127.0.0.1:57372 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[32mINFO[0m:     [14-03-2025 21:11:38] 127.0.0.1:57372 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections/a5a38f61-56a9-4b6f-bc62-2e4e4f734dc8/query HTTP/1.1" 200
+[32mINFO[0m:     [14-03-2025 21:19:32] Shutting down
+[32mINFO[0m:     [14-03-2025 21:19:32] Waiting for application shutdown.
+[36mDEBUG[0m:    [14-03-2025 21:19:32] Stopping component System
+[36mDEBUG[0m:    [14-03-2025 21:19:32] Stopping component SegmentAPI
+[36mDEBUG[0m:    [14-03-2025 21:19:32] Stopping component LocalExecutor
+[36mDEBUG[0m:    [14-03-2025 21:19:32] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [14-03-2025 21:19:32] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [14-03-2025 21:19:32] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [14-03-2025 21:19:32] Stopping component SimpleAsyncRateLimitEnforcer
+[36mDEBUG[0m:    [14-03-2025 21:19:32] Stopping component SimpleRateLimitEnforcer
+[36mDEBUG[0m:    [14-03-2025 21:19:32] Stopping component Posthog
+[36mDEBUG[0m:    [14-03-2025 21:19:32] Stopping component SimpleQuotaEnforcer
+[36mDEBUG[0m:    [14-03-2025 21:19:32] Stopping component SqliteDB
+[36mDEBUG[0m:    [14-03-2025 21:19:32] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [14-03-2025 21:19:32] Application shutdown complete.
+[32mINFO[0m:     [14-03-2025 21:19:32] Finished server process [[36m95102[0m]

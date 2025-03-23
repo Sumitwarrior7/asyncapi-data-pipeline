@@ -1,0 +1,7 @@
+venv
+.env
+__pycache__
+storage/__pycache__
+data_retreival/__pycache__
+data_retreival/async_parser.py
+chroma/chroma_persistent_data
