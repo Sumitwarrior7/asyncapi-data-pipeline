@@ -135,3 +135,4 @@ wrapt==1.17.2
 youtube-transcript-api==1.0.1
 yt-dlp==2025.2.19
 zipp==3.21.0
+ollama==0.4.7
