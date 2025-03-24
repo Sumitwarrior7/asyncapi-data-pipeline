@@ -1,5 +1,6 @@
 venv
 .env
+finetuned_dataset_creation/.env
 __pycache__
 storage/__pycache__
 data_retreival/__pycache__

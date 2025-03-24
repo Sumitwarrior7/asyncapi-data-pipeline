@@ -86,7 +86,6 @@ def main():
     print("📥 Fetching blogs...")
     blogs = fetch_blogs()
     store_data(db, "blogs", blogs)
-
     # print("📥 Fetching GitHub repositories...")
     # repos = get_repos()
 
