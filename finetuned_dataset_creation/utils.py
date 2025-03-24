@@ -49,8 +49,10 @@ def call_ollama(prompt: str, config: Dict) -> str:
             response = ollama.chat(
                 model=config["model_name"],
                 messages=[{"role": "user", "content": prompt}],
-                temperature=config.get("temperature", 0.5),
-                max_tokens=config.get("max_tokens", 512)
+                # options={
+                #     "temperature": config.get("temperature", 0.5),
+                #     "max_tokens": config.get("max_tokens", 512)
+                # }
             )
             return response['message']['content']
         except Exception as e:
