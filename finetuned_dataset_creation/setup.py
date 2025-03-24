@@ -7,9 +7,9 @@ load_dotenv()
 def setup():
     os.makedirs("input", exist_ok=True)
     os.makedirs("output", exist_ok=True)
-    small_model = os.getenv("SMALL_MODEL_NAME")
-    large_model = os.getenv("LARGE_MODEL_NAME")
-    ollama_url = os.getenv("OLLAMA_URL")
+    small_model = os.getenv("SMALL_MODEL_NAME", "gemma3:1b")  
+    large_model = os.getenv("LARGE_MODEL_NAME", "gemma3:4b")   
+    ollama_url = os.getenv("OLLAMA_URL", "http://localhost:11434/v1")
     
     if not os.path.exists("config.yaml"):
         default_config = {
