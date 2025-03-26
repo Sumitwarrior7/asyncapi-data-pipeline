@@ -37,7 +37,13 @@ def store_data(db, table_name, data):
     collection = db[table_name]
     if data:
         collection.insert_many(data)
-
+        
+def store_list_data(db, table_name, data):
+    collection = db[table_name]
+    if isinstance(data, list):  # Ensure data is a list
+        collection.insert_many([{"context": dt} for dt in data])  # Efficient batch insert
+    else:
+        raise ValueError("Data must be a list of dictionaries")
 
 # Function to fetch and modify "docs" collection
 def fetch_and_modify_docs(db):

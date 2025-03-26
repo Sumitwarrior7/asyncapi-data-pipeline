@@ -7,7 +7,16 @@ from tqdm import tqdm
 # Constants
 GITHUB_ORG = "https://api.github.com/orgs/asyncapi/repos"
 OUTPUT_DIR = "asyncapi_code_data"
-DOC_EXTENSIONS = {".md", ".yaml", ".yml", ".json", ".jpeg", ".jpg", ".png"}  # Ignore these extensions
+ # Ignore these extensions
+DOC_EXTENSIONS = {
+    # Documentation & Config Files
+    ".md", ".yaml", ".yml", ".json", ".toml", ".ini", ".xml", ".cfg", ".conf", ".lock",
+    # Logs & Dumps  
+    ".log", ".bak", ".tmp", ".swp", ".lock", ".csv", ".tsv",  
+    # Environment & Ignore Files  
+    ".gitignore", ".gitattributes", ".editorconfig", ".dockerignore", ".npmignore", ".prettierrc",  
+    ".jpeg", ".jpg", ".png",
+} 
 
 def extract_code_data(repo_path, repo_name):
     """Extract relevant data from code files in a cloned repository."""

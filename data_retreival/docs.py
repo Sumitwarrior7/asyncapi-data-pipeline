@@ -9,7 +9,11 @@ from preprocessing import preprocess_html
 GITHUB_ORG = "https://api.github.com/orgs/asyncapi/repos"
 OUTPUT_DIR = "asyncapi_data"
 DOC_EXTENSIONS = {".md", ".yaml", ".yml", ".json"}  # Documentation files
-
+EXCLUDED_FILES = {
+    "package.json", "package-lock.json", "pnpm-lock.yaml", "yarn.lock", "npm-shrinkwrap.json",
+    ".eslintrc.json", ".prettierrc.json", "tsconfig.json", "babel.config.json",
+    ".editorconfig", ".dockerignore", "Makefile"
+}
 
 def extract_docs(repo_path, repo_name):
     """Extract and structure documentation-related files from repositories."""
@@ -20,7 +24,7 @@ def extract_docs(repo_path, repo_name):
         
         for file in files:
             file_extension = os.path.splitext(file)[1]
-            if file_extension in DOC_EXTENSIONS:
+            if file_extension in DOC_EXTENSIONS and file not in EXCLUDED_FILES:
                 file_path = os.path.join(root, file)
                 relative_path = os.path.relpath(file_path, repo_path)
                 

@@ -6,3 +6,9 @@ storage/__pycache__
 data_retreival/__pycache__
 data_retreival/async_parser.py
 chroma/chroma_persistent_data
+
+blogs.jsonl
+blogs_final.jsonl
+code_json_data/
+docs.jsonl
+docs_final.jsonl
